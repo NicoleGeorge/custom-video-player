@@ -6,7 +6,7 @@
 
 body {
   font-family: 'IBM Plex Mono', monospace;
-  background-color: #D296D5;
+  background-color: #d296d5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,28 +16,52 @@ body {
 }
 
 h1 {
-  color: white;
+  color: black;
 }
 
 .screen {
   cursor: pointer;
-  width: 50%;
-  background-color: #D7FFA1 !important;
+  width: 70%;
+  background-color: #d7ffa1 !important;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 .controls {
-    background:#D7FFA1;
-    color: black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  background: #d7ffa1;
+  width: 70%;
+  color: black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #38d36c;
+}
+
+.controls .fa-stop {
+  color: #ee401e;
+}
+
+.controls .fa-pause {
+  color: white;
+}
+
+.controls .timestamp {
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;
+}
 
 @media (max-width: 800px) {
   .screen,
